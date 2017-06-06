@@ -12,6 +12,7 @@ body{
 
 .zilker-small{
   border: 5px solid #FDA0BF;
+  height: 100px;
   position: absolute;
   transform: translateX(20vh) translateY(70vh);
 }

@@ -28,13 +28,13 @@ body{
 }
 
 .home a{
-  font-size: 150%;
+  font-size: 200%;
   color: #FDA0BF;
   text-decoration: none;
 }
 
 .home a:hover{
-  font-size: 200%;
+  font-size: 250%;
   transition: ease;
   text-decoration: underline;
 }
