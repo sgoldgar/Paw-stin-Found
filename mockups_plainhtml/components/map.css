@@ -1,0 +1,22 @@
+body{
+  background: #9397D6;
+  max-height: 100vh;
+  max-width: 200vh;
+}
+
+.capitol{
+  position: absolute;
+  transform: translateX(90vh) translateY(40vh);
+  height: 150px;
+}
+
+.zilker-small{
+  border: 5px solid #FDA0BF;
+  position: absolute;
+  transform: translateX(20vh) translateY(70vh);
+}
+
+.zilker-small:hover{
+  border: 5px solid #354882;
+  opacity: 0.7;
+}

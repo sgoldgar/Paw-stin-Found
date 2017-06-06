@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Happy+Monkey');
+
+
+body{
+  background: #9397D6;
+  max-height: 100vh;
+}
+
+.zilker{
+  background-image: url('img/ZilkerRock.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 475px;
+  width: 950px;
+  margin: 0 10%;
+  box-shadow: 0px 0px 4px 7px rgba(255, 245, 176, 0.6);
+}
+
+.ginny{
+  height: 150px;
+  position: absolute;
+  transform: translateX(275px) translateY(300px);
+}
+
+.items{
+  background: #9397D6;
+}
+
+.backpack{
+  position: absolute;
+  height: 120px;
+  border-radius: 50%;
+  transform: translateY(-15px) translateX(1000px);
+}
+
+.backpack:hover{
+  height: 130px;
+}
+
+.sheep-toy{
+  position: absolute;
+  height: 120px;
+  transform: translateX(860px) translateY(330px);
+}
+
+.speech-bubble{
+  background: white;
+  border-radius: 50%;
+  height:150px;
+  width: 250px;
+  position: absolute;
+  transform: translateX(350px) translateY(150px)
+}
+
+.speech-bubble::after{
+  content: '';
+  background: transparent;
+  position: absolute;
+  bottom: -15px;
+  left: 50px;
+  width: 0;
+  border-width: 40px 40px 0;
+  border-style: solid;
+  border-color: white transparent;
+  transform: rotate(25deg);
+}
+
+
+p {
+    font-family: 'Happy Monkey', sans-serif;
+    position: absolute;
+    color: #354882;
+    transform: translateX(18px) translateY(40px);
+    font-size: 120%;
+}
