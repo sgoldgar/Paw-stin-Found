@@ -43,6 +43,10 @@ body{
   transform: translateX(860px) translateY(330px);
 }
 
+.sheep-toy:hover{
+  height: 150px;
+  transform: translateX(840px) translateY(300px);
+}
 .speech-bubble{
   background: white;
   border-radius: 50%;
@@ -66,10 +70,52 @@ body{
 }
 
 
-p {
-    font-family: 'Happy Monkey', sans-serif;
-    position: absolute;
-    color: #354882;
-    transform: translateX(18px) translateY(40px);
-    font-size: 120%;
+.speech-bubble p {
+  font-family: 'Happy Monkey', sans-serif;
+  position: absolute;
+  color: #354882;
+  transform: translateX(18px) translateY(40px);
+  font-size: 120%;
+  text-align: center;
+  max-width: 180px;
+}
+
+#initial-instructions{
+  font-family: 'Happy Monkey', sans-serif;
+  color: #354882;
+  background: rgba(255, 245, 176, 1);
+  padding: 30px;
+  font-size: 30px;
+  display: block;
+  width: 600px;
+  text-align: center;
+  line-height: 2;
+  border-radius: 25px;
+  transform: translateX(175px) translateY(100px);
+  position: absolute;
+  z-index: 2;
+}
+
+#initial-instructions button{
+  font-size: 20px;
+  display: inline;
+  width: 80px;
+  padding: 10px;
+  margin: 0 250px;
+  border-radius: 25px;
+  border: 3px solid white;
+  background: #354882;
+  color: white;
+  font-family: 'Happy Monkey', sans-serif;
+}
+
+.backpack-sheep{
+  position: absolute;
+  height: 100px;
+  transform: translateX(900px) translateY(20px);
+}
+
+.highlighted-item{
+  background:  rgba(255, 245, 176, 0.7);
+  border-radius: 50%;
 }

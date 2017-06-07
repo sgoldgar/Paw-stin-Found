@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Happy+Monkey');
+
 body{
   background: #9397D6;
   max-height: 100vh;
@@ -20,4 +22,35 @@ body{
 .zilker-small:hover{
   border: 5px solid #354882;
   opacity: 0.7;
+}
+
+
+
+#instructions{
+  font-family: 'Happy Monkey', sans-serif;
+  color: #354882;
+  background: rgba(255, 245, 176, 1);
+  padding: 30px;
+  font-size: 30px;
+  display: block;
+  width: 600px;
+  text-align: center;
+  line-height: 2;
+  border-radius: 25px;
+  transform: translateX(300px) translateY(150px);
+  position: absolute;
+  z-index: 2;
+}
+
+#instructions button{
+  font-size: 20px;
+  display: inline;
+  width: 80px;
+  padding: 10px;
+  margin: 0 250px;
+  border-radius: 25px;
+  border: 3px solid white;
+  background: #354882;
+  color: white;
+  font-family: 'Happy Monkey', sans-serif;
 }

@@ -4,9 +4,15 @@
     <meta charset="utf-8">
     <title>Zilker Rock</title>
     <link rel="stylesheet" href="zilker.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="zilker.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="zilker">
+      <p id="initial-instructions">Click on the dog to see what they need for the party, then click the item they need to put it in your backpack! <button class="close">Done</button> </p>
       <img class="ginny" src="img/Ginny.png" alt="ginny dog">
       <div class="speech-bubble">
         <p>Help me find my sheep!</p>
@@ -14,6 +20,9 @@
       <img class="sheep-toy" src="img/FluffySheep.png" alt="sheep toy">
     </div>
     <div class="items">
+      <div class="backpack-items">
+        <img class="backpack-sheep" src="img/FluffySheep.png" alt="backpack item sheep"/>
+      </div>
       <img class="backpack" src="img/Backpack.png" alt="backpack">
     </div>
 
