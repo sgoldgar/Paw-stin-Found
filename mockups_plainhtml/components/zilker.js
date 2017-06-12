@@ -1,10 +1,22 @@
 $(document).ready(function() {
   $(".speech-bubble").hide();
-  $(".backpack-items").hide();
+  $(".hidden-item").hide();
+  $("#second-instructions, #third-instructions, #zilker-hints").hide();
 
+  $('.help-button').click(function(){
+    $('#zilker-hints').toggle();
+  })
+
+  $( ".backpack" ).one('click', function() {
+    $("#second-instructions").show();
+  });
+
+  $( ".backpack-sheep" ).one('click', function() {
+    $("#third-instructions").show();
+  });
 
   $( ".close" ).click(function() {
-    $("#initial-instructions").hide();
+    $(this).parent().hide();
   });
 
 
@@ -31,17 +43,24 @@ $(document).ready(function() {
       top: "150px",
       display: 'none'
     }, 800, function() {
+      $('.backpack-sheep').removeClass('hidden-item').show().delay(2000);
     });
   })
+
+
+  $(".backpack-sheep").click(function() {
+    $(this).toggleClass('highlighted-item');
+  });
 
 
   $(".backpack").click(function() {
     $(".backpack-items").toggle();
   });
 
-  $(".backpack-sheep").click(function() {
-    $(this).toggleClass('highlighted-item');
+  $( ".help-button" ).click(function() {
+    $("#initial-instructions").toggle();
   });
+
 
 
 
